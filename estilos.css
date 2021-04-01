@@ -1,0 +1,202 @@
+*{
+	margin: 0px;
+	padding:0px;
+}
+
+body{
+	background-image: url("frutas.jpg");
+	background-size: 60%;
+}
+
+.contenido{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-rows: repeat(3,1fr);
+	grid-template-columns: repeat(3,1fr);
+	grid-template-areas: "header header header"
+						  "aside aside aside"
+						  "section section section";
+
+}
+
+.header{
+	grid-area: header;
+	padding-top: 10px;
+	text-align: center;
+	
+	background-color: #dfdfdf;
+	color: #966464;
+	font-family: 'roboto';
+	height: 50%;
+	font-size: 20px;
+}
+
+.aside{
+	grid-area: aside;
+	text-align: center;
+	background-color: #444748;
+	margin:auto;
+	width: 400px;
+	border:solid 2px;
+	border-color: #636768;
+	border-radius: 25px;
+	margin-top: -130px;
+}
+
+::placeholder{
+	color: #fff;
+	font-size: 17px;
+}
+
+
+.aside .peso{
+	
+	color: #afb1b2;
+	font-family: 'Roboto', sans-serif;
+	padding: 15px;
+}
+
+.aside .altura{
+	padding: 15px;
+	color: #afb1b2;
+	font-family: 'Roboto', sans-serif;
+}
+
+.aside .total{
+
+	color: #afb1b2;
+	font-family: 'Roboto', sans-serif;
+}
+
+.aside .masculino{
+	margin-right: 100px;
+	padding-bottom: 25px;
+
+}
+
+.aside .femenino{
+	margin-top: -77px;
+	margin-left: 100px;
+	padding-bottom: 25px;
+
+}
+
+.aside .botton{
+	padding: 20px;
+}
+
+
+.input{
+	border:solid 3px;
+	border-color: #2917f6;
+	height: 40px;
+	width: 300px;
+	background-color: #444748;
+}
+.input-alt{
+	border:solid 3px;
+	border-color: #2917f6;
+	height: 40px;
+	width:300px;
+	background-color: #444748;
+}
+.input-total{
+	background-color: #747575;
+	height: 50px;
+	
+}
+
+#btn{
+	height: 50px;
+	width: 100px;
+	background-color: #2861a2;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'calibri';
+}
+
+#masculino{
+	width: 30px;
+	height: 30px;
+}
+#masculino:hover{
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+	color:#1401f9;
+}
+
+#femenino{
+	width: 30px;
+	height: 30px;
+}
+
+
+#femenino:hover{
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+	color:#f223d0;
+}
+
+.cambio{
+	width: 35px;
+	height: 35px;
+	color:#1401f9;
+
+}
+.cambiof{
+	width: 35px;
+	height: 35px;
+	color:#f223d0;
+
+}
+
+
+.section{
+	grid-area: section;
+	text-align: center;
+	background-color: #444748;
+	margin:auto;
+	width: 400px;
+	border:solid 2px;
+	border-color: #636768;
+	border-radius: 25px;
+}
+
+.composicion{
+	margin-right: 240px;
+	list-style: none;
+}
+
+.composicion ul{
+	list-style: none;
+}
+
+.composicion li{
+	padding: 10px;
+}
+
+.indice{
+	margin-left: 250px;
+	margin-top: -232px;
+}
+
+.indice ul{
+	list-style: none;
+
+}
+
+.indice li{
+	padding: 15px;
+}
+
+#compCorporal{
+	color: #fff;
+	border-bottom:solid 1px;
+}
+
+#indiceMasa{
+	color: #fff;
+	border-bottom:solid 1px;
+}

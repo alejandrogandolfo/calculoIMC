@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora IMC</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+</head>
+<body>
+	<div class="contenido">
+		<header class="header">
+			<h1>CALCULADORA IMC</h1>
+
+
+		</header>
+
+		<aside class="aside">
+		
+			<div class="masculino">
+				<p>Masculino</p><ion-icon id="masculino" name="man-outline"></ion-icon>
+			</div>
+
+			<div class="femenino">
+				<p>Femenino</p></a><ion-icon id="femenino" name="woman-outline"></ion-icon>
+			</div>
+
+			<div class="peso">
+				<p>Intruduzca el peso:</p><input id="peso" class="input" type="number" name="peso" min="30" step="0.1" placeholder="Peso en Kg" required="">
+			</div>
+
+			<div class="altura">
+				<p>Introduzca altura en cm</p><input id="altura" class="input-alt" type="number" placeholder="Altura en cm" name="altura" min="130" max="220" required="">
+			</div>
+
+			<div class="botton">
+				<button id="btn">Calcular</button>
+
+			</div>
+
+			<div class="total">
+				<h2>RESULTADO:</h2><br>
+				<h4 id="resultado"></h4><br>
+				<h3 id="imc"></h3>
+
+
+			</div>
+
+		</aside>
+
+
+		<section class="section">
+			<div class="composicion">
+				<p id="compCorporal">COMPOSICION CORPORAL</p>
+				<ul>
+					<li>Peso normal</li>
+					<li>Peso inferior al normal</li>
+					<li>Peso superior al normal</li>
+					<li>Obesidad</li>
+
+				</ul>
+			</div>
+			<div class="indice">
+				<p id="indiceMasa">Índice de masa corporal(IMC)</p>
+				<ul>
+					<li>18.5 – 24.9</li>
+					<li>Menos de 18.5</li>
+					<li>25.0 – 29.9</li>
+					<li>Más de 30.0</li>
+
+
+				</ul>
+
+
+			</div>
+
+
+
+		
+
+
+
+
+
+		</section>
+	</div>
+
+
+	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
